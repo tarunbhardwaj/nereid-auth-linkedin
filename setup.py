@@ -95,6 +95,7 @@ minor_version = int(minor_version)
 
 requires = [
     'flask-oauth',
+    'trytond_nereid>=3.0.7.0',
 ]
 for dep in info.get('depends', []):
     if not re.match(r'(ir|res|webdav)(\W|$)', dep):
